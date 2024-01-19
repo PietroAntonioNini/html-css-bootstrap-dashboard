@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar py-3" style="background-color: #e5e5e5;">
+        <nav class="navbar h-100" style="background-color: #e5e5e5;">
             <div class="container-fluid flex-nowrap">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
@@ -43,7 +43,27 @@
     </header>
 
 
-    <main></main>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 aside">
+                    <div class="row py-4 h-100">
+                        <div class="col">
+                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-house my_icon"></i>Home</button>
+                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-chart-simple my_icon"></i>Stats</button>
+                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-signal my_icon"></i>Signals</button>
+                        </div>
+    
+                        <div class="col align-self-end">
+                            <button type="button" class="btn text-start text-white ps-4 fw-semibold border-0"><i class="fa-solid fa-gear my_icon"></i>Admin</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-8 main_view"></div>
+            </div>
+        </div>
+    </main>
 
 
 

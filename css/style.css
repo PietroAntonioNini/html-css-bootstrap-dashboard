@@ -1,0 +1,28 @@
+header {
+    height: 70px;
+}
+
+/* Aside */
+
+.aside {
+    width: 150px;
+    height: calc(100vh - 70px);
+
+    background-image: url(/img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+.my_icon {
+    width: 30px;
+}
+
+/* Main View */
+
+.main_view {
+    border: 1px solid red;
+    /* test */
+
+    width: calc(100% - 150px);
+    height: calc(100vh - 70px);
+
+}
