@@ -19,10 +19,6 @@ header {
 /* Main View */
 
 .main_view {
-    border: 1px solid red;
-    /* test */
-
     width: calc(100% - 150px);
     height: calc(100vh - 70px);
-
 }
