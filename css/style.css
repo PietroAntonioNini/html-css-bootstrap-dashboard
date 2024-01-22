@@ -4,7 +4,14 @@ header {
 }
 
 main {
+    height: calc(100vh - 70px);
     overflow: hidden;
+}
+
+/* Nav */
+
+.nav_mobile img {
+    width: 50px;
 }
 
 /* Aside */
@@ -16,14 +23,21 @@ main {
     background-color: #051E34;
 }
 
+.aside_mobile {
+    width: 60px;
+
+    background-image: url(/img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
 .my_icon {
     width: 30px;
 }
 
+
 /* Main View */
 
 .main_view {
-    width: calc(100% - 150px);
     height: calc(100vh - 70px);
 }
 
@@ -38,20 +52,22 @@ main {
     font-weight: 600;
 }
 
-.next_class .fa-code {
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-
-    border-radius: 50%;
-    color: white;
-    background-color: #F26551;
+.next_class .avatar_icon {
+    width: 30px;
+    margin-right: 5px;
 }
 
 .main_scroll {
     height: calc(100vh - 200px);
-    overflow: auto;
+    overflow-y: auto;
 
     background-color: #F8F8F8;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .main_scroll {
+        height: calc(100vh - 250px);
+    }
 }
