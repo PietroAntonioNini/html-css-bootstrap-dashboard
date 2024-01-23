@@ -36,7 +36,17 @@
                     <a class="nav-link" style="color: #5b5858;" href="#"><i class="fa-solid fa-list"></i></a>
                     <a class="nav-link" style="color: #5b5858;" href="#"><i class="fa-solid fa-circle-question"></i></a>
                     <a class="nav-link" style="color: #5b5858;" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                    <a class="nav-link" style="color: #FF8F00;" href="#"><i class="fa-solid fa-bell"></i></a>
+
+                    <div class="dropdown">
+                        <button class="btn border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FF8F00;">
+                            <i class="fa-solid fa-bell"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -56,8 +66,15 @@
                     </div>
                 </form>
 
-                <div class="nav">
-                    <a class="nav-link" style="color: #FF8F00;" href="#"><i class="fa-solid fa-bell"></i></a>
+                <div class="dropdown">
+                    <button class="btn border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #FF8F00;">
+                        <i class="fa-solid fa-bell"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -69,13 +86,13 @@
                 <div class="col-2 aside d-none d-lg-block">
                     <div class="row py-4 h-100">
                         <div class="col">
-                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-house my_icon"></i>Home</button>
-                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-chart-simple my_icon"></i>Stats</button>
-                            <button type="button" class="btn text-start text-white ps-4 mb-1 fw-semibold border-0"><i class="fa-solid fa-signal my_icon"></i>Signals</button>
+                            <button type="button" class="btn btn-outline-secondary text-start text-white mb-1 fw-semibold border-0"><i class="fa-solid fa-house my_icon"></i>Home</button>
+                            <button type="button" class="btn btn-outline-secondary text-start text-white mb-1 fw-semibold border-0"><i class="fa-solid fa-chart-simple my_icon"></i>Stats</button>
+                            <button type="button" class="btn btn-outline-secondary text-start text-white mb-1 fw-semibold border-0"><i class="fa-solid fa-signal my_icon"></i>Signals</button>
                         </div>
     
                         <div class="col align-self-end">
-                            <button type="button" class="btn text-start text-white ps-4 fw-semibold border-0"><i class="fa-solid fa-gear my_icon"></i>Admin</button>
+                            <button type="button" class="btn btn-outline-secondary text-start text-white fw-semibold border-0"><i class="fa-solid fa-gear my_icon"></i>Admin</button>
                         </div>
                     </div>
                 </div>
@@ -83,18 +100,18 @@
                 <div class="col-2 aside_mobile d-lg-none">
                     <div class="row py-4 h-100">
                         <div class="col">
-                            <button type="button" class="btn text-start text-white fw-semibold border-0"><i class="fa-solid fa-house my_icon"></i></button>
-                            <button type="button" class="btn text-start text-white fw-semibold border-0"><i class="fa-solid fa-chart-simple my_icon"></i></button>
-                            <button type="button" class="btn text-start text-white fw-semibold border-0"><i class="fa-solid fa-signal my_icon"></i></button>
+                            <button type="button" class="btn btn-outline-secondary text-white border-0"><i class="fa-solid fa-house my_icon"></i></button>
+                            <button type="button" class="btn btn-outline-secondary text-white border-0"><i class="fa-solid fa-chart-simple my_icon"></i></button>
+                            <button type="button" class="btn btn-outline-secondary text-white border-0"><i class="fa-solid fa-signal my_icon"></i></button>
                         </div>
     
                         <div class="col align-self-end">
-                            <button type="button" class="btn text-start text-white fw-semibold border-0"><i class="fa-solid fa-gear my_icon"></i></button>
+                            <button type="button" class="btn btn-outline-secondary text-white border-0"><i class="fa-solid fa-gear my_icon"></i></button>
                         </div>
                     </div>
                 </div>
     
-                <div class="col main_view">
+                <div class="col main_section">
                     <div class="row top_banner bg-primary text-white py-3">
                         <div class="col-12 col-md-4 col-lg-6 mb-2 mb-md-0">
                             <h1>Boolean <span class="badge rounded-pill bg-dark bg-opacity-25 fw-normal fs-6 align-middle my_badges">Piano blaze</span></h1>
@@ -123,7 +140,7 @@
                             <span class="fw-medium">Nuovo Studente</span>
 
                             <button type="button" class="btn btn-outline-light ms-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                            <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas offcanvas-end w-50 my_offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -193,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="row main_scroll py-4">
+                    <div class="row main_view py-4">
                         <div class="col-12 col-lg-8">
                             <div class="row flex-column">
                                 <div class="col-8 w-100 next_class">
@@ -203,17 +220,17 @@
                                         </div>
 
                                         <ul class="list-group list-group-flush list_class">
-                                            <li class="list-group-item my_headers">
+                                            <li class="list-group-item my_headers_class">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7">Nome</div>
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7 ">Nome</div>
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">Data Inizio</div>
                                                             <div class="col-4 text-start">ROI</div>
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">Stato</div>
                                                             <div class="col-7">Azioni</div>
@@ -224,9 +241,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 75</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 75</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">15 Feb 2021</div>
 
@@ -234,7 +251,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-success py-1">Done</span>
@@ -251,9 +268,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 76</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 76</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">16 Feb 2021</div>
 
@@ -261,7 +278,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-success py-1">Done</span>
@@ -278,9 +295,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 77</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 77</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">17 Feb 2021</div>
 
@@ -288,7 +305,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-warning py-1">process</span>
@@ -305,9 +322,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 78</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 78</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">18 Feb 2021</div>
 
@@ -315,7 +332,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-success py-1">Done</span>
@@ -332,9 +349,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 79</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 79</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">19 Feb 2021</div>
 
@@ -342,7 +359,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-danger py-1">failed</span>
@@ -359,9 +376,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 80</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 80</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">20 Feb 2021</div>
 
@@ -369,7 +386,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-success py-1">Done</span>
@@ -386,9 +403,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 81</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 81</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">21 Feb 2021</div>
 
@@ -396,7 +413,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-danger py-1">failed</span>
@@ -413,9 +430,9 @@
 
                                             <li class="list-group-item">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-6 col-md-4 col-lg-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 82</div>
+                                                    <div class="col-6 col-md-4 col-xl-6 col-xxl-7"><img src="img/class-avatar.jpg" class="avatar_icon" alt=""> Classe 82</div>
 
-                                                    <div class="col-md-4 col-lg-2 d-none d-md-block">
+                                                    <div class="col-md-4 col-xl-3 col-xxl-3 d-none d-md-block">
                                                         <div class="row text-center">
                                                             <div class="col-8">22 Feb 2021</div>
 
@@ -423,7 +440,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-6 col-md-4 col-lg-2">
+                                                    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
                                                         <div class="row text-center justify-content-between">
                                                             <div class="col-4 p-0">
                                                                 <span class="badge bg-success py-1">Done</span>
@@ -456,7 +473,7 @@
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>lorem ipsum</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates quae magni, quaerat illum ab ducimus optio qui repellat nulla deserunt laborum est deleniti! Aspernatur doloribus beatae facere. Hic, asperiores!
+                                                        <strong>Clicca sul + in alto nella sezione blu.</strong>
                                                     </div>
                                                 </div>
                                             </div>
@@ -469,7 +486,7 @@
                                                 </h2>
                                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>lorem ipsum</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates quae magni, quaerat illum ab ducimus optio qui repellat nulla deserunt laborum est deleniti! Aspernatur doloribus beatae facere. Hic, asperiores!
+                                                        <strong>Clicca sull'icona della campanella</strong>
                                                     </div>
                                                 </div>
                                             </div>
@@ -482,7 +499,7 @@
                                                 </h2>
                                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <strong>lorem ipsum</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates quae magni, quaerat illum ab ducimus optio qui repellat nulla deserunt laborum est deleniti! Aspernatur doloribus beatae facere. Hic, asperiores!
+                                                        <strong>Questa web app è sviluppata per essere utilizzata comodamente da tutti i dispositivi!</strong>
                                                     </div>
                                                 </div>
                                             </div>
